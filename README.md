@@ -50,7 +50,9 @@ It encourages community participation through education, volunteering, events, a
 Built as a static frontend website for a first-year university project.
 
 ## Screenshots
-
+![Home Page](https://github.com/kalana-03/Live-on-Land/blob/main/Image/Home.SS.png)
+![Content Page](https://github.com/kalana-03/Live-on-Land/blob/main/Image/Content_Page.SS.png)
+![Table](https://github.com/kalana-03/Live-on-Land/blob/main/Image/Table.SS.png)
 
 ## How to Run Locally
 
