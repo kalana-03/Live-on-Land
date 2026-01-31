@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team page</title>
+    <link rel="stylesheet" href="../css/team.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="Profile.html">User</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Volunteer.html">Volunteer</a></li>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Sitemap.html">Site Map</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+            </ul>
+      
+            <ul>
+                <li><a href="#"><img src="../Image/whiteText.png"></a></li>
+                <li class="hideOnMobile"><a href="Home.html">Home</a></li>
+                <li class="hideOnMobile"><a href="Team.html">Team</a></li>
+                <li class="hideOnMobile"><a href="Volunteer.html">Volunteer</a></li>
+                <li class="hideOnMobile"><a href="Table.html">Table</a></li>
+                <li class="hideOnMobile"><a href="Sitemap.html">Site Map</a></li>
+                <li class="hideOnMobile"><a href="Feedback.html">Feedback</a></li>
+                <li class="hideOnMobile"><a href="Profile.html">User</a></li>
+                <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <div class="team">
+            <div class="member-card">
+                <img src="../Image/20240519_111327.jpg" alt="Teenu Adithya">
+                <h3>Teenu Adithya</h3>
+                <p>Role: Web Developer</p>
+                <p>Tasks: Splash Screen, Volunteer Page</p>
+            </div>
+            <div class="member-card">
+                <img src="../Image/photo_2025-03-08_10-02-27.jpg" alt="Kalana Malhara">
+                <h3>Kalana Malhara</h3>
+                <p>Role: Designer</p>
+                <p>Tasks: Home Page, Table Page</p>
+            </div>
+            <div class="member-card">
+                <img src="../Image/photo_2024-10-12_20-48-20.jpg" alt="Amitha Ravinath">
+                <h3>Amitha Ravinath</h3>
+                <p>Role: Content Creator</p>
+                <p>Tasks: Team Page, Feedback Page</p>
+            </div>
+            <div class="member-card">
+                <img src="../Image/photo_2025-03-08_11-13-11.jpg" alt="Nadil Diksura">
+                <h3>Nadil Diksura</h3>
+                <p>Role: Tester</p>
+                <p>Tasks: User Profile, Sitemap</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footerContent">
+                <img src="../Image/whiteText.png" alt="Logo">
+                <p>
+                    Our mission is to restore and protect life on land through comminuty driven reforestation, conservation, sustainable practices.
+            </div>
+            <div class="footerContent">
+                <h4>Content Page</h4>
+                <ul>
+                    <li><a href="content_ST1.html">Student 01</a></li>
+                    <li><a href="content_ST2.html">Student 02</a></li>
+                    <li><a href="content_ST3.html">Student 03</a></li>
+                    <li><a href="content_ST4.html">Student 04</a></li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h4>Editor Page</h4>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Student 01</a></li>
+                    <li><a href="pageEditor_ST2.html">Student 02</a></li>
+                    <li><a href="pageEditor_ST3.html">Student 03</a></li>
+                    <li><a href="pageEditor_ST4.html">Student 04</a></li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h4>Validation Page</h4>
+                <ul>
+                    <li><a href="validation_ST1.html">Student 01</a></li>
+                    <li><a href="validation_ST2.html">Student 02</a></li>
+                    <li><a href="validation_ST3.html">Student 03</a></li>
+                    <li><a href="validation_ST4.html">Student 04</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <span>copyright &copy; All rights reserved by TerraBloom(Group 16)</span>
+    </div>
+
+
+
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex';
+    }
+
+    function closeSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none';
+    }
+
+
+</script>
+</body>
+</html>

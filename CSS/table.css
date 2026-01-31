@@ -1,0 +1,97 @@
+.container {
+    width: 90%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 50px;
+}
+
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+
+.container h1{
+    color:rgb(147, 187, 107);
+    margin:10px 50px 40px 50px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+table img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+table {
+    width:80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: #2c362c;
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(102, 103, 103, 0.3);
+}
+
+th, td {
+    border: 3px solid #d6d6d6;
+    padding: 20px;
+    text-align: center;
+    color: #2c362c;
+    word-wrap: break-word;
+    font-size: 1.1rem;
+    background: #d0d0d0;
+}
+
+th {
+    border: 1px solid #ffffff;
+    background: #d4d4d499;
+    font-size: 1.3rem;
+    color: #e7e7e7;
+    letter-spacing: 1px;
+}
+
+td:hover {
+    background: #ffffffda;
+    transition: 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+td:nth-child(even){
+    background: #d9d9d9;
+}
+
+
+.forest td img {
+    width: 100px;
+    height:100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.forest td img:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 720px) {
+    .table-wrapper h1{
+        font-size: 1.5em;
+    }
+    .container {
+        padding: 20px; /* Reduce padding to give more space */
+    }
+    .forest {
+        width: 100%; /* Table takes full container width */
+    }
+    th, td {
+        padding: 10px; /* Reduce cell padding */
+        font-size: 0.9rem; /* Smaller font for better fit */
+    }
+}
+

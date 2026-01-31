@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student 4 - Nadil Diksura </title>
+
+    <link rel="stylesheet" href="../css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="../css/global.css">
+
+    
+</head>
+
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header id="top">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="Profile.html">User</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Volunteer.html">Volunteer</a></li>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Sitemap.html">Site Map</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+            </ul>
+    
+            <ul>
+                <li><a href="#"><img src="../Image/whiteText.png" alt="logo"></a></li>
+                <li class="hideOnMobile"><a href="Home.html">Home</a></li>
+                <li class="hideOnMobile"><a href="Team.html">Team</a></li>
+                <li class="hideOnMobile"><a href="Volunteer.html">Volunteer</a></li>
+                <li class="hideOnMobile"><a href="Table.html">Table</a></li>
+                <li class="hideOnMobile"><a href="Sitemap.html">Site Map</a></li>
+                <li class="hideOnMobile"><a href="Feedback.html">Feedback</a></li>
+                <li class="hideOnMobile"><a href="Profile.html">User</a></li>
+                <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="stud">
+        <h2>Nadil Diksura, Student 4</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">User Profile</h2><br>
+                    <h3>Technical Description</h3><br>
+                    <h4>1. HTML Structure</h4><br>
+                    <ul>
+                        <li><strong>Semantic Tags:</strong> <code>&lt;nav&gt; &lt;div&gt; &lt;ul&gt; &lt;li&gt; &lt;h1&gt; &lt;p&gt; &lt;form&gt; &lt;table&gt;</code>, etc., improve readability and accessibility.</li>
+                        <li><strong>Navigation (<code>&lt;nav&gt;</code>):</strong> A sidebar and a top navigation menu are created, using a responsive approach with hidden mobile elements.</li>
+                        <li><strong>Profile Section:</strong> A fixed left container displays user information, achievements, and a profile picture.</li>
+                        <li><strong>Scrollable Right Section:</strong> Includes dynamically structured content like bio, skills, goals, experiences, and a contact form.</li>
+                    </ul><br>
+                    
+                    <h4>2. CSS Styling</h4><br>
+                    <ul>
+                        <li><strong>Layout:</strong> Flexbox for structure, Grid for content.</li>
+                        <li><strong>Typography:</strong> Roboto, Poppins with green-earth tones.</li>
+                        <li><strong>Effects:</strong> Hover lift (transform), dynamic progress bars.</li>
+                        <li><strong>Responsive:</strong> Adjusts via media queries (max-width: 950px).</li>
+                    </ul><br>
+                    
+                    <h3>Accessibility</h3><br>
+                        <ul>
+                            <li><strong>Semantic HTML:</strong> Improves screen reader compatibility and navigation.</li>
+                            <li><strong>Alt Text for Images:</strong> Ensures visually impaired users understand content.</li>
+                            <li><strong>Contrast & Readability:</strong> Dark text on light backgrounds enhances visibility.</li>
+                        </ul><br>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#splashVal">a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="splash.html">a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Sitemap</h2><br>
+                    <h3>Technical Description</h3><br>
+                    <h4>1. HTML Structure</h4><br> 
+                    <ul>
+                        <li><strong>Navigation (<code>&lt;nav&gt;</code>):</strong> Uses <code>&lt;ul&gt;</code>for menus and a sidebar for mobile responsiveness.</li>
+                        <li><strong>SVG Sitemap:</strong> Uses <code>&lt;rect&gt;</code> for pages, <code>&lt;path&gt;</code> for connections, and <code>&lt;text&gt;</code> for labels.</li>
+                    </ul><br>
+
+                    <h3>Accessibility</h3><br>
+                    <ul>
+                        <li><strong>Responsive Design:</strong> meta viewport, flexible SVG sizing.</li>
+                        <li><strong>Contrast & Readability:</strong> White text on green, font-size: 14px; for clarity.</li>
+                        <li><strong>Responsive Design:</strong> meta viewport, flexible SVG sizing.</li>
+                    </ul><br>
+                    
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#volunteerVal">a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="volunteer.html">a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2><br>
+                    <h3>Technical Description</h3><br>
+                    <h4>1. HTML Structure</h4><br>
+                    <Ul>
+                        <li><Strong>Navigation (<code>&lt;nav&gt;</code>):</Strong> Responsive sidebar with SVG icons for toggling.</li>
+                        <li><Strong>Intro Section (#intro):</Strong> Background image, <code>&lt;h1&gt;</code>, paragraph, and navigation links.</li>
+                        <li><Strong>Content Sections (.content):</Strong> <code>&lt;h2&gt;</code> headings with structured <code>&lt;div class="cards"&gt;</code> for Causes, Impact, and Solutions.</li>
+                        <li><Strong>Go Top Button (.top):</Strong> Fixed-position <code>&lt;a href="#intro"Go top a&gt;</code> for easy navigation.</li>
+                        <li><Strong>Footer (<code>&lt;footer&gt;</code>):</Strong> Multiple <code>&lt;div class="footerContent"&gt;</code> blocks for links and info.</li>
+                    </Ul><br>
+
+                    <h4>2. CSS Styling</h4><br>
+                    <ul>
+                        <li><strong>Layout:</strong> content uses <code>max-width: 1200px;</code> with box-shadow.</li>
+                        <li><strong>Text:</strong> text-shadow on headings; font-size: 1.1rem; for readability.</li>
+                        <li><strong>Cards:</strong> <code>display: flex;</code> for alignment; hover effect lifts card.</li>
+                        <li><strong>Go Top Button:</strong> <code>position: fixed;</code> with a styled button.</li>
+                    </ul><br>
+
+                    <h3>Accessibility</h3><br>
+                    <ul>
+                        <li><strong>Semantic HTML:</strong> <code>&lt;nav&gt; &lt;header&gt; &lt;footer&gt; </code> for screen reader support.</li>
+                        <li><strong>Focus Management:</strong>  Hover and focus effects enhance interactivity.</li>
+                    </ul><br>
+                    
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#contentVal">a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content.html">a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2><br>
+                <h3><u> <b> <p>Challenges and Resolutions</p></b></u></h3><br>
+                <b> <p> -Technical Difficulties:</b> Issues with coding, website responsiveness, and hosting were resolved through research, team collaboration, and seeking external resources.</p><br> 
+                <b> <p> -Team Coordination:</b> Differing schedules and work styles were managed by assigning clear roles, conducting regular meetings, and utilizing project management tools. </p><br>  
+                <b> <p> -Content Accuracy:</b> Ensuring credible and well-researched content was achieved by relying on reputable sources such as marine conservation organizations.</p><br>  
+                <b> <p> -Design and User Experience:</b>Balancing aesthetics and functionality was addressed by following UI/UX principles and testing the website for accessibility.</p><br>   
+                <b> <p> -Time Management:</b> Task division, scheduling, and deadline setting helped maintain project efficiency.</p><br>   
+                        
+                <h3><u> <b> <p>  Lessons Learned</p></b></u></h3><br> 
+                <p> - Effective communication and teamwork are essential for success. </p><br> 
+                <p> - Flexibility and adaptability help in overcoming unforeseen challenges.</p> <br>  
+                <p> - Research and credibility are crucial for informative content. </p><br>  
+                <p> - User-centered design enhances engagement and accessibility. </p><br>  
+                <p> - Proper planning and organization improve efficiency and productivity..</p><br> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2><br>
+                    <ul>
+                        <li>Pages follow Janet regulations by using semantic HTML, accessible image alt texts, and logical content structure</li>
+                        <li>Navigation menus and internal links are clear and consistent across all pages, enhancing usability.</li>
+                        <li>External resources (fonts, stylesheets) are loaded securely via HTTPS, ensuring technical compliance.</li>
+                        <li>Content is original, relevant, and truthfully presented, reflecting real efforts and realistic design practices</li>
+                    </ul>
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>Pexels. Available at: <a href="https://www.pexels.com/">https://www.pexels.com/</a></li>
+                        <li>W3 Schools. Availble at: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></li>
+                        
+
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 4</li>
+                    <ul> 
+                        <li><a href="#splash">Profile page</a></li>
+                        <li><a href="#volunteer">Sitemap page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footerContent">
+                <img src="../assets/images/whiteText.png" alt="Logo">
+                <p>
+                    Our mission is to restore and protect life on land through comminuty driven reforestation, conservation, sustainable practices.
+            </div>
+            <div class="footerContent">
+                <h4>Content Page</h4>
+                <ul>
+                    <li><a href="content_ST1.html">Student 01</a></li>
+                    <li><a href="content_ST2.html">Student 02</a></li>
+                    <li><a href="content_ST3.html">Student 03</a></li>
+                    <li><a href="content_ST4.html">Student 04</a></li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h4>Editor Page</h4>
+                <ul>
+                    <li><a href="pageEditor_ST1.html">Student 01</a></li>
+                    <li><a href="pageEditor_ST2.html">Student 02</a></li>
+                    <li><a href="pageEditor_ST3.html">Student 03</a></li>
+                    <li><a href="pageEditor_ST4.html">Student 04</a></li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h4>Validation Page</h4>
+                <ul>
+                    <li><a href="validation_ST1.html">Student 01</a></li>
+                    <li><a href="validation_ST2.html">Student 02</a></li>
+                    <li><a href="validation_ST3.html">Student 03</a></li>
+                    <li><a href="validation_ST4.html">Student 04</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

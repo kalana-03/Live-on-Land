@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="../css/feedback.css" >
+  </head>
+
+  <body>
+    <nav>
+      <ul class="sidebar">
+          <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="Profile.html">User</a></li>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Team.html">Team</a></li>
+          <li><a href="Volunteer.html">Volunteer</a></li>
+          <li><a href="Table.html">Table</a></li>
+          <li><a href="Sitemap.html">Site Map</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
+      </ul>
+
+      <ul>
+          <li><a href="#"><img src="../Image/whiteText.png"></a></li>
+          <li class="hideOnMobile"><a href="Home.html">Home</a></li>
+          <li class="hideOnMobile"><a href="Team.html">Team</a></li>
+          <li class="hideOnMobile"><a href="Volunteer.html">Volunteer</a></li>
+          <li class="hideOnMobile"><a href="Table.html">Table</a></li>
+          <li class="hideOnMobile"><a href="Sitemap.html">Site Map</a></li>
+          <li class="hideOnMobile"><a href="Feedback.html">Feedback</a></li>
+          <li class="hideOnMobile"><a href="Profile.html">User</a></li>
+          <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+  </nav>
+
+    <div class="container">
+      <h2 class="titletag">Feedback Us</h2>
+
+      <form id="feedbackForm" action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="fullnameField">Enter Your Full Name:</label>
+          <input type="text" id="fullnameField" name="fullname" required >
+          <span id="nameError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="emailField">Enter Your Email Address:</label>
+          <input type="email" id="emailField" name="email" required >
+          <span id="emailError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phoneField">Enter Telephone Number:</label>
+          <input type="tel" id="phoneField" name="phone" required>
+          <span id="phoneError" class="error"></span>
+        </div>
+
+        <div class="form-group">
+          <label>Is this the first time you have visited this website?</label>
+          <label
+            ><input type="radio" name="first_visit" value="yes" > Yes</label
+          >
+          <label><input type="radio" name="first_visit" value="no" > No</label>
+        </div>
+
+        <div class="form-group">
+          <label for="reason"
+            >What is the PRIMARY reason you came to this website?</label
+          >
+          <textarea id="reason" name="reason" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="source">How did you hear about our website?</label>
+          <select id="source" name="source">
+            <option>Search Engine</option>
+            <option>Social Media</option>
+            <option>Friends/Family</option>
+            <option>Advertisement</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="navigation">Is this website easy to navigate?</label>
+          <select id="navigation" name="navigation">
+            <option>Very Easy</option>
+            <option>Moderate</option>
+            <option>Difficult</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Did you find what you need?</label>
+          <label
+            ><input type="checkbox" name="find" value="all" > Yes, all of
+            it</label
+          >
+          <label
+            ><input type="checkbox" name="find" value="some" > Yes, some of
+            it</label
+          >
+          <label
+            ><input type="checkbox" name="find" value="none" > No, none of
+            it</label
+          >
+        </div>
+
+        <div class="form-group">
+          <label>Rate your overall experience (1-10)</label>
+          <div class="rating">
+            <input type="radio" name="rating" value="1" required > 1
+            <input type="radio" name="rating" value="2" > 2
+            <input type="radio" name="rating" value="3" > 3
+            <input type="radio" name="rating" value="4" > 4
+            <input type="radio" name="rating" value="5" > 5
+            <input type="radio" name="rating" value="6" > 6
+            <input type="radio" name="rating" value="7" > 7
+            <input type="radio" name="rating" value="8" > 8
+            <input type="radio" name="rating" value="9" > 9
+            <input type="radio" name="rating" value="10"> 10
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="suggestions"
+            >Suggestions and ideas to improve this website</label
+          >
+          <textarea id="suggestions" name="suggestions" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Select a Date:</label>
+          <input type="date" id="date" name="date" >
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-main">
+          <div class="footerContent">
+              <img src="../Image/whiteText.png" alt="Logo">
+              <p>
+                  Our mission is to restore and protect life on land through comminuty driven reforestation, conservation, sustainable practices.
+          </div>
+          <div class="footerContent">
+              <h4>Content Page</h4>
+              <ul>
+                  <li><a href="content_ST1.html">Student 01</a></li>
+                  <li><a href="content_ST2.html">Student 02</a></li>
+                  <li><a href="content_ST3.html">Student 03</a></li>
+                  <li><a href="content_ST4.html">Student 04</a></li>
+              </ul>
+          </div>
+          <div class="footerContent">
+              <h4>Editor Page</h4>
+              <ul>
+                  <li><a href="pageEditor_ST1.html">Student 01</a></li>
+                  <li><a href="pageEditor_ST2.html">Student 02</a></li>
+                  <li><a href="pageEditor_ST3.html">Student 03</a></li>
+                  <li><a href="pageEditor_ST4.html">Student 04</a></li>
+              </ul>
+          </div>
+          <div class="footerContent">
+              <h4>Validation Page</h4>
+              <ul>
+                  <li><a href="validation_ST1.html">Student 01</a></li>
+                  <li><a href="validation_ST2.html">Student 02</a></li>
+                  <li><a href="validation_ST3.html">Student 03</a></li>
+                  <li><a href="validation_ST4.html">Student 04</a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+
+    <div class="footer-bottom">
+      <span>Copyright &copy; All rights reserved by TerraBloom(Group 16)</span>
+    </div>
+
+    <script>
+      // Sidebar Toggle Functions
+      function showSidebar() {
+        document.querySelector(".sidebar").style.display = "flex";
+      }
+
+      function closeSidebar() {
+        document.querySelector(".sidebar").style.display = "none";
+      }
+
+      // Form Validation
+      document
+        .getElementById("feedbackForm")
+        .addEventListener("submit", function (e) {
+          let isValid = true;
+          // Name Validation
+          const nameInput = document.getElementById("fullnameField");
+          const nameError = document.getElementById("nameError");
+          if (nameInput.value.trim() === "") {
+            nameError.textContent = "Full Name is required.";
+            nameInput.setCustomValidity("Full Name is required.");
+            isValid = false;
+          } else {
+            nameError.textContent = "";
+            nameInput.setCustomValidity(""); // Reset custom validity
+          }
+
+          // Email Validation
+          const emailInput = document.getElementById("emailField");
+          const emailError = document.getElementById("emailError");
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(emailInput.value.trim())) {
+            emailError.textContent = "Enter a valid email address.";
+            emailInput.setCustomValidity("Enter a valid email address.");
+            isValid = false;
+          } else {
+            emailError.textContent = "";
+            emailInput.setCustomValidity(""); // Reset custom validity
+          }
+
+          // Phone Number Validation
+          const phoneInput = document.getElementById("phoneField");
+          const phoneError = document.getElementById("phoneError");
+          //  Phone number pattern (both landline and mobile)
+          const phonePattern =
+            /^(?:0(70|71|72|73|74|75|76|77|78|79)[0-9]{6}|0[2-9]{1}[0-9]{8})$/;
+
+          // Validate phone number format
+          if (
+            phoneInput.value.trim() !== "" &&
+            !phonePattern.test(phoneInput.value.trim())
+          ) {
+            phoneError.textContent = "Enter a valid  phone number.";
+            phoneInput.setCustomValidity("Enter a valid  phone number.");
+            isValid = false;
+          } else {
+            phoneError.textContent = "";
+            phoneInput.setCustomValidity(""); // Reset custom validity
+          }
+
+          // Prevent form submission if validation fails
+          if (!isValid) {
+            event.preventDefault();
+          }
+        });
+    </script>
+  </body>
+</html>

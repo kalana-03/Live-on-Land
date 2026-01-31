@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Proile</title>
+        <link rel="stylesheet" href="../CSS/user_profile.css">
+        <link rel="stylesheet" href="../CSS/global.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="Profile.html">User</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Volunteer.html">Volunteer</a></li>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Sitemap.html">Site Map</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+            </ul>
+    
+            <ul>
+                <li><a href="#"><img src="../Image/whiteText.png" alt="logo"></a></li>
+                <li class="hideOnMobile"><a href="Home.html">Home</a></li>
+                <li class="hideOnMobile"><a href="Team.html">Team</a></li>
+                <li class="hideOnMobile"><a href="Volunteer.html">Volunteer</a></li>
+                <li class="hideOnMobile"><a href="Table.html">Table</a></li>
+                <li class="hideOnMobile"><a href="Sitemap.html">Site Map</a></li>
+                <li class="hideOnMobile"><a href="Feedback.html">Feedback</a></li>
+                <li class="hideOnMobile"><a href="Profile.html">User</a></li>
+                <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>  
+    
+        <div class="container">
+
+            <div class="fixed-left-container">
+
+                <div class="left-bio-container">
+                    <div>
+                        <img src="../Image/user.jpg" alt="Profile Picture">
+                    </div>
+                    <div>
+                        <h1>Nadil Diksura</h1>
+                        <p><i>"at the heart of life, we will always find nature"</i></p>
+                        <ul>
+                            <li>Age - <B>21</B></li>
+                            <li>Work - <B>Student</B></li>
+                            <li>Family - <B>Single</B></li>
+                            <li>Location - <B>Sri Lanka</B></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="left-achievements-container">
+                    <h2>Achievements</h2>
+                    <div class="stat-container">
+                        <div class="stat-box">
+                            <span class="stat-icon">📌</span>
+                            <div class="stat-info">
+                                <h3>12</h3>
+                                <p>Projects Joined</p>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-icon">⏳</span>
+                            <div class="stat-info">
+                                <h3>150 hrs</h3>
+                                <p>Total Hours Engaged</p>
+                            </div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-icon">💰</span>
+                            <div class="stat-info">
+                                <h3>$500</h3>
+                                <p>Total Donation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="scrollable-right-container">
+
+                <div class="content">
+                    <H2>Short bio</H2>
+                    <p>A passionate nature lover dedicated to protecting the environment, exploring wild landscapes, and advocating for conservation efforts to preserve the beauty of the natural world. 🌿🌎</p>
+                </div>
+
+                <div class="content">
+                    <h2>Skills</h2>
+                    
+                    <div class="skill">
+                        <div class="skill-container">
+                            <div class="skill-name">Communication</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-container">
+                            <div class="skill-name">Project Management</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-container">
+                            <div class="skill-name">Collaboration</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-container">
+                            <div class="skill-name">Problem-Solving</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-container">
+                            <div class="skill-name">Data Collection & Analysis</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content">
+                    <h2>Goals</h2>
+                    <div class="goals">
+                        <div class="goal"><span class="goal-icon">🌳</span> Plant 1,000 Trees </div>
+                        <div class="goal"><span class="goal-icon">🐾</span> Rescue 50 Animals </div>
+                        <div class="goal"><span class="goal-icon">📢</span> Educate 1,000 People </div>
+                        <div class="goal"><span class="goal-icon">🚯</span> Remove 500kg plastic </div>
+                        <div class="goal"><span class="goal-icon">🦋</span> Create 10 Pollinator Gardens </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h2>Frustrations</h2>
+                    <div class="frustrations">
+                        <div class="frustration">⮞ Industrial Impact </div>
+                        <div class="frustration">⮞ Forest Fires </div>
+                        <div class="frustration">⮞ Funding Challenges </div>
+                        <div class="frustration">⮞ Recurring Pollution </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h2>Experiences</h2>
+                    <div class="experiences">
+                        <div class="experience-box">
+                            <div class="experience-title"><span class="experience-icon">🌱</span> Community Reforestation Project</div>
+                            <div class="experience-description">Work with local groups to plant native trees and restore deforested areas.</div>
+                        </div>
+                        <div class="experience-box">
+                            <div class="experience-title"><span class="experience-icon">🚯</span> Neighbourhood Clean-Up Drive</div>
+                            <div class="experience-description">Organize a cleanup event to remove plastic waste from parks and streets.</div>
+                        </div>
+                        <div class="experience-box">
+                            <div class="experience-title"><span class="experience-icon">🌾</span> Sustainable Agriculture Initiative</div>
+                            <div class="experience-description">Partner with farmers to promote organic, pesticide-free farming techniques.</div>
+                        </div>
+                        <div class="experience-box">
+                            <div class="experience-title"><span class="experience-icon"> 🚜</span> Organic Farming Volunteering</div>
+                            <div class="experience-description">Help local farmers grow crops sustainably without harming the environment.</div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="content">
+                    <h2>UN Goals I Supported</h2>
+                    <div class="image-grid">
+                        <div class="image-container">
+                          <img src="../Image/un1.png" alt="Image 1">
+                        </div>
+                        <div class="image-container">
+                          <img src="../Image/un2.png" alt="Image 2">
+                        </div>
+                        <div class="image-container">
+                          <img src="../Image/un3.png" alt="Image 3">
+                        </div>
+                        <div class="image-container">
+                          <img src="../Image/un4.png" alt="Image 4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h2>My Availability</h2>
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Availability</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9 AM - 5 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>10 AM - 4 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>12 PM - 6 PM</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content">
+                    <h2>Contact Me</h2>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="pageed">&copy; 2025 Life on Land - <a href="../pages/pageEditor_ST4.html">Page Editor</a> <a href="../pages/validation_ST4.html">  Validation page</a></p>
+    </body>
+
+</html>

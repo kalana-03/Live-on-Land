@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table</title>
+        <link rel="stylesheet" href="../CSS/global.css">
+        <link rel="stylesheet" href="../CSS/table.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="Profile.html">User</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Volunteer.html">Volunteer</a></li>
+                <li><a href="Table.html">Table</a></li>
+                <li><a href="Sitemap.html">Site Map</a></li>
+                <li><a href="Feedback.html">Feedback</a></li>
+            </ul>
+    
+            <ul>
+                <li><a href="#"><img src="../Image/whiteText.png" alt="logo"></a></li>
+                <li class="hideOnMobile"><a href="Home.html">Home</a></li>
+                <li class="hideOnMobile"><a href="Team.html">Team</a></li>
+                <li class="hideOnMobile"><a href="Volunteer.html">Volunteer</a></li>
+                <li class="hideOnMobile"><a href="Table.html">Table</a></li>
+                <li class="hideOnMobile"><a href="Sitemap.html">Site Map</a></li>
+                <li class="hideOnMobile"><a href="Feedback.html">Feedback</a></li>
+                <li class="hideOnMobile"><a href="Profile.html">User</a></li>
+                <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1>Global Forest Cover and Conservation Efforts</h1>
+            <div class="table_wrapper">
+                <table class="forest">
+                    <tr>
+                        <th colspan="2">ANIMAL</th>
+                        <th rowspan="2">REGION</th>
+                        <th rowspan="2">CONSERVATION STATUS</th>
+                        <th rowspan="2">APPROXIMATE POPULATION</th>
+                        <th rowspan="2">KEY CONSERVATION EFFORTS</th>
+                    <tr>
+                        <th>species</th>
+                        <th>image</th>
+                    </tr>
+                    <tr>
+                        <td>Bengal Tiger</td>
+                        <td><img src="../Image/BengalTiger.jpg" alt="Bengal Tiger"></td>
+                        <td>South Asia (India, Bangladesh)</td>
+                        <td>Endangered</td>
+                        <td>2,500 - 3,000</td>
+                        <td rowspan="2">Anti-poaching patrols, habitat corridors</td>
+                    </tr>
+                    <tr>
+                        <td>Saiga Antelope</td>
+                        <td><img src="../Image/SaigaAntelope.jpg" alt="Saiga Antelope"></td>
+                        <td>Central Asia (Kazakhstan, Mongolia)</td>
+                        <td>Critically Endangered</td>
+                        <td>50,000 - 100,000</td>
+                    </tr>
+                    <tr>
+                        <td>Giant Panda</td>
+                        <td><img src="../Image/GiantPanda.jpg" alt="Giant Panda"></td>
+                        <td>East Asia (China)</td>
+                        <td>Vulnerable</td>
+                        <td>1,800 - 2,000</td>
+                        <td>Protected reserves, breeding programs</td>
+                    </tr>
+                    <tr>
+                        <td>Orangutan</td>
+                        <td><img src="../Image/Orangutan.jpg" alt="Orangutan"></td>
+                        <td>Southeast Asia (Borneo, Sumatra)</td>
+                        <td>Critically Endangered</td>
+                        <td>50,000 - 70,000</td>
+                        <td>Deforestation prevention, rewilding</td>
+                    </tr>
+                    <tr>
+                        <td>Amazonian Manatee</td>
+                        <td><img src="../Image/AmazonianManatee.jpg" alt="Amazonian Manatee"></td>
+                        <td>Amazon Rainforest (Brazil, Peru)</td>
+                        <td>Vulnerable</td>
+                        <td>10,000 - 15,000</td>
+                        <td>River protection, anti-hunting laws</td>
+                    </tr>
+                    <tr>
+                        <td>Iberian Lynx</td>
+                        <td><img src="../Image/IberianLynx.jpg" alt="Iberian Lynx"></td>
+                        <td>Europe (Spain, Portugal)</td>
+                        <td>Endangered</td>
+                        <td>1,100 - 1,300</td>
+                        <td>Captive breeding, reintroduction</td>
+                    </tr>
+                    <tr>
+                        <td>Gray Wolf</td>
+                        <td><img src="../Image/GreyWolf.jpg" alt="Gray Wolf"></td>
+                        <td>North America (USA, Canada)</td>
+                        <td>Least Concern (some populations Vulnerable)</td>
+                        <td>10,000 - 15,000</td>
+                        <td>Wildlife corridors, legal protection</td>
+                    </tr>
+                    <tr>
+                        <td>Sri Lankan Elephant</td>
+                        <td><img src="../Image/elephant.jpg" alt="Sri Lankan Elephant"></td>
+                        <td>South Asia (Sri Lanka)</td>
+                        <td>Endangered</td>
+                        <td>2,000 - 4,000</td>
+                        <td>Habitat preservation, human-elephant conflict mitigation</td>
+                    </tr>
+            
+            </table>
+            </div>
+
+
+        </div>
+
+
+
+        <footer>
+            <div class="footer-main">
+                <div class="footerContent">
+                    <img src="../Image/whiteText.png" alt="Logo">
+                    <p>
+                        Our mission is to restore and protect life on land through comminuty driven reforestation, conservation, sustainable practices.
+                </div>
+                <div class="footerContent">
+                    <h4>Content Page</h4>
+                    <ul>
+                        <li><a href="content_ST1.html">Student 01</a></li>
+                        <li><a href="content_ST2.html">Student 02</a></li>
+                        <li><a href="content_ST3.html">Student 03</a></li>
+                        <li><a href="content_ST4.html">Student 04</a></li>
+                    </ul>
+                </div>
+                <div class="footerContent">
+                    <h4>Editor Page</h4>
+                    <ul>
+                        <li><a href="pageEditor_ST1.html">Student 01</a></li>
+                        <li><a href="pageEditor_ST2.html">Student 02</a></li>
+                        <li><a href="pageEditor_ST3.html">Student 03</a></li>
+                        <li><a href="pageEditor_ST4.html">Student 04</a></li>
+                    </ul>
+                </div>
+                <div class="footerContent">
+                    <h4>Validation Page</h4>
+                    <ul>
+                        <li><a href="validation_ST1.html">Student 01</a></li>
+                        <li><a href="validation_ST2.html">Student 02</a></li>
+                        <li><a href="validation_ST3.html">Student 03</a></li>
+                        <li><a href="validation_ST4.html">Student 04</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <span>copyright &copy; all recived by TeraBloom(Group16)</span>
+        </div>    
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex';
+        }
+
+        function closeSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none';
+        }
+
+
+    </script>
+    </body>
+</html>

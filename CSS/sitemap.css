@@ -1,0 +1,36 @@
+.sitemap-container {
+    text-align: center;
+    margin-top: 50px;
+}
+svg {
+    max-width: 100%;
+    height: auto;
+}
+.node {
+    fill: #66a82c;
+    stroke: black;
+    stroke-width: 2px;
+    cursor: pointer;
+}
+.node:hover {
+    fill: #6ec324;
+}
+.sub-node {
+    fill: #64913c;
+    stroke: black;
+    stroke-width: 2px;
+}
+.sub-node:hover {
+    fill: #59a11a;
+    
+}
+text {
+    font-size: 14px;
+    text-anchor: middle;
+    fill: white;
+}
+path {
+    fill: none;
+    stroke: rgb(65, 64, 64);
+    stroke-width: 2px;
+}

@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - provide your student name</title>
+    
+    <link rel="stylesheet" href="../CSS/global.css"> 
+    <link rel="stylesheet" href="../CSS/pageEditor_validator_ST2.css"> 
+    <style>
+        .container ul{
+            display: block;
+            padding-left:20px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+    <nav class="temp">
+        <ul class="sidebar">
+            <li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="Profile.html">User</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="Volunteer.html">Volunteer</a></li>
+            <li><a href="Table.html">Table</a></li>
+            <li><a href="Sitemap.html">Site Map</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#"><img src="../Image/whiteText.png" alt="logo"></a></li>
+            <li class="hideOnMobile"><a href="Home.html">Home</a></li>
+            <li class="hideOnMobile"><a href="Team.html">Team</a></li>
+            <li class="hideOnMobile"><a href="Volunteer.html">Volunteer</a></li>
+            <li class="hideOnMobile"><a href="Table.html">Table</a></li>
+            <li class="hideOnMobile"><a href="Sitemap.html">Site Map</a></li>
+            <li class="hideOnMobile"><a href="Feedback.html">Feedback</a></li>
+            <li class="hideOnMobile"><a href="Profile.html">User</a></li>
+            <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <section class="stud">
+        <h2>Kalana Malhara , Student 02</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="home">Home</h2>
+                <br>
+                    <h3>Technical Description</h3>
+                    <br>
+                    <p>
+                        For the Home page, I implemented a modern, responsive design using several key HTML and CSS techniques:
+                    </p>
+                    <br>
+                    <h3>HTML</h3>
+                    <br>
+                    <ul>
+                        <li><strong>Hero Section:</strong> I Created with a full-width video background using the <code>&lt;video&gt;</code> tag with autoplay, muted, and loop attributes. Text content is overlaid using absolute positioning with <code>h2</code> and <code>h3</code> heading.</li>
+                    <br>
+                        <li><strong>Content Organization:</strong> I Used distinct <code>&lt;section&gt;</code> elements with unique IDs (#targets, #news, #programs, #events) to create clearly defined content areas and enable smooth navigation.</li>
+                    <br>
+                        <li><strong>Responsive Layouts:</strong> Implemented CSS Grid and Flexbox through class-based styling (.target-grid, .news-grid, .program-content, .events-grid) to create adaptable content blocks that respond to different screen sizes. for that part I used @media tags.</li>
+                    <br>    
+                        <li><strong>Structured Content:</strong> The programs section features nested unordered lists for organized content presentation.</li>
+                    <br>    
+                        <li><strong>Card-Based Design:</strong> Used consistent styling through reusable classes (.target-card, .news-card, .event-card) to maintain visual represntation while effectively separating different types of information.</li>
+                    </ul>
+                            
+                    <br>
+                    <h3>CSS</h3>
+                    <br>
+
+                    <ul>
+                        <li><strong>Hero Section:</strong> Built a full-width hero area with video background using <code>position: absolute</code> and <code>transform: translate(-50%, -50%)</code> to center the video perfectly behind the text content.</li>
+                        <br>
+                        <li><strong>Card Layouts:</strong> Used CSS grid with <code>display: grid</code> and <code>gap: 30px</code> to create flexible card arrangements that adapt to different screen sizes through the <code>minmax()</code> function.</li>
+                        <br>
+                        <li><strong>Visual Effects:</strong> Added subtle interactive elements like button hover states with <code>transform: scale(1.03)</code> and color transitions to improve user engagement and highlight clickable items.</li>
+                        <br>
+                        <li><strong>Section Design:</strong> Applied consistent padding, text alignment, and spacing to create clear visual sections that guide users through content.</li>
+                        <br>
+                        <li><strong>Background Styling:</strong> Used background images with overlay effects in the news section, along with <code>backdrop-filter: blur(10px)</code> to create depth and visual interest.</li>
+                        <br>
+                        <li><strong>Flexible Content:</strong> Created a program section with <code>display: flex</code> to position text and images side-by-side on larger screens while stacking them on mobile views.</li>
+                        <br>
+                        <li><strong>Mobile Optimization:</strong> Implemented three breakpoints (1024px, 720px, 480px) to adjust font sizes, spacing, and layouts for optimal viewing across devices.</li>
+                        <br>
+                        <li><strong>Image Control:</strong> Used <code>object-fit: cover</code> to ensure images maintain proper proportions while filling their containers completely.</li>
+                    </ul>
+                    <br>
+                    <h3>Accessibility</h3>
+                    <br>
+                        <p>
+                            <ul>
+                                <li><strong>Semantic HTML Structure:</strong> Used appropriate heading hierarchy (h1, h2, h3) throughout the page to create a logical document outline that screen readers can navigate effectively.</li>
+                                <br>
+                                <li><strong>Responsive Design:</strong> Created flexible layouts that adapt to different screen sizes.</li>
+                                <br>
+                                <li><strong>ARIA Landmarks: </strong>Implemented ARIA landmarks (main, section, nav) to help screen reader users navigate between different content sections more efficiently.</li>
+                            </ul>
+                        </p>
+                        <br>
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST2.html#HomeVal">Validation Page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <br>
+                    <h3>Link to the Home page</h3>
+                        <p><a href="Home.html">Home</a></p>
+            </section>
+
+            <section>
+                <h2 id="table">Table</h2><br>
+                    <h3>Technical Description</h3><br>
+                    <p>
+                        For the Table page, I implemented a structured and informative display of conservation data using essential HTML and CSS techniques:
+                        </p><br>
+                        <h3>HTML</h3><br>
+                        <ul>
+                            <li><strong>Table Structure:</strong>I Used the <code>&lt;table&gt;</code> element with table tags (<code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>) to organize data in a clear, accessible format.</li><br>
+                            <li><strong>Advanced Table Features:</strong> Implemented <code>colspan</code> and <code>rowspan</code> attributes to create a hierarchical header structure and merge cells for related conservation efforts, improving data presentation and readability.</li><br>
+                            <li><strong>Content Organization:</strong> I Created a container <code>&lt;div&gt;</code> with class "table_wrapper" to ensure proper table display across different devices while maintaining structural unity.</li><br>
+                            <li><strong>Visual Elements:</strong> Incorporated <code>&lt;img&gt;</code> tags with appropriate alt attributes for each animal species, enhancing the visual appeal while maintaining accessibility.</li><br>
+                            <li><strong>Information Hierarchy:</strong> Used proper heading (<code>&lt;h1&gt;</code>) for the table title "Global Forest Cover and Conservation Efforts" to establish context and improve page organization.</li><br>
+                        </ul>
+                        <br>
+                        <h3>CSS</h3><br>
+                        <ul>
+                            <li><strong>Container Structure:</strong> Created a <code>.container</code> class with 90% width and auto margins to center content, add a padding and background color for better readability.</li><br>
+                            <li><strong>Table Responsiveness:</strong> Implemented a <code>.table-wrapper</code> with <code>overflow-x: auto</code> to ensure tables remain accessible on smaller screens while maintaining structural integrity.</li><br>
+                            <li><strong>Visual Enhancement:</strong> Applied border-radius, box-shadow, and backdrop-filter properties to the table element, creating a modern appearance depth.</li><br>
+                            <li><strong>Image Integration:</strong> Used CSS to control table images with <code>object-fit: cover</code> and customized dimensions, ensuring consistent image display while adding interactive hover effects with <code>transform: scale(1.1)</code>.</li><br>
+                            <li><strong>Color Scheme:</strong> Established a color palette using forest-inspired tones (#2c362c, #d0d0d0) for table elements, while maintaining readability.</li><br>
+                            <li><strong>Interactive Elements:</strong> Added hover states to table cells using <code>td:hover</code> with background color transitions and font-weight changes to improve user interaction and content emphasis.</li><br>
+                            <li><strong>Media Queries:</strong> added responsive breakpoints at 768px to adjust heading sizes, container padding, and cell dimensions for optimal display across devices.</li><br>
+                            <li><strong>Typography Hierarchy:</strong> Used varying font sizes, letter-spacing, and color contrast between headers and data cells to establish clear information hierarchy and improve scannability.</li>
+                        </ul>
+                            <br>
+                    <h3>Accessibility</h3>
+                        <ul>
+                            <br>
+                            <li><strong>Table Structure: </strong> Used proper table elements (th, td) with appropriate colspan and rowspan attributes</li><br>
+                            <li><strong>Image Alternatives:</strong> Provided detailed alt text for animal images that included both species name and conservation status information.</li><br>
+                            <li><strong>Visual Design:</strong>I used adequate color contrast in some areas (dark text on light backgrounds) and hover effects provide visual feedback when interacting with table cells</li><br>
+                        </ul>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST2.html#TableVal">Validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        <br>
+                    <h3>Link to the Table page</h3>
+                        <p><a href="Table.html">Table</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2><br>
+                <h3>Technical Description</h3><br>
+                <h3>HTML</h3><br>
+                <ul>
+                    <li><strong>Content Structure:</strong> Used <code>&lt;div&gt;</code> elements with meaningful class names (top, why, how, join) and corresponding IDs to organize content logically and enable smooth internal navigation.</li><br>
+                    <li><strong>Internal Navigation:</strong> Implemented an <code>internal_link</code> section with anchor links using <code>&lt;a href="#section-id"&gt;</code> to create a user-friendly way to jump between major content sections.</li><br>
+                    <li><strong>Interactive Elements:</strong> Added a "go up" button with integrated SVG icon and an "Apply" button in the join section to enhance user engagement and provide clear calls to action.</li><br>
+                    <li><strong>Visual Hierarchy:</strong>I Used proper heading elements (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>) with appropriate sizing to improve content readability.</li><br>
+                    <li><strong>External Resource Management:</strong> Linked content-specific and global CSS files to maintain styling consistency while properly separating design concerns.</li>
+                </ul><br>
+                    <h3>CSS</h3><br>
+                <ul>
+                    <li><strong>Base Layout:</strong> Set up a full-height body with dark background color (#444544) and consistent font family to create a solid foundation for the conservation theme.</li><br>
+                    <li><strong>Hero Section:</strong> Built a striking top section with a background nature image, large text (6em for h1), and semi-transparent content area using <code>backdrop-filter:blur(50px)</code> for better text readability.</li><br>
+                    <li><strong>Color Scheme:</strong> Used green accents (#81cd34, #529F25) for headings and interactive elements to reinforce the environmental theme while maintaining good contrast with light text.</li><br>
+                    <li><strong>Navigation Links:</strong> Created a flexible internal link menu with <code>display:flex</code> and <code>justify-content:space-evenly</code> that wraps content on smaller screens while adding subtle hover effects.</li><br>
+                    <li><strong>Section Spacing:</strong> Applied consistent margins (50px) between content sections to create visual breathing room and improve content separation.</li><br>
+                    <li><strong>Interactive Elements:</strong> Added hover effects to buttons and links using color changes and <code>transform: scale()</code> properties to provide visual feedback to users.</li><br>
+                    <li><strong>Helper Features:</strong> Included a fixed-position "go up" button with <code>position: fixed</code> in the bottom-right corner to help users navigate long content easily.</li><br>
+                    <li><strong>Mobile Design:</strong> Created two breakpoints (800px and 480px) that adjust text sizes, padding, and layout for smaller screens, including a switch from flex to block display for internal links on very small devices.</li>
+                </ul><br>
+                    <h3>Accessibility</h3>
+                        <p> 
+                            <br>
+                            <uL>
+                                <li><strong>Content Structure: </strong>Clear hierarchical structure with headings (h1, h2) and I also used inernal page navigation links.</li><br>
+                                <li><strong>Visual Design: </strong>added hover effects for better viusal represntation. also used margin to create space between content sections.</li><br>
+                            </uL>
+                        </p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST2.html#ContentVal">Validation Page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <br>
+                    <h3>Link to the Content page</h3>
+                        <p><a href="content_ST2.html">Content Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2><br>
+                    <p>When I was making the Life on Land website, I ran into couple of problems. First time reading CW specification it was hard to keep track on every details. So I took notes about key points. Acording to the topic I knew theme should be somewhat green, but was struggling find the right color palette. After discussing it with team memmbers we came identified a color palette which added better readability.<br>
+                        what looked good on my laptop was huge on phones! I had to create different sizes for different screen sizes. The "go up" button kept causing weird issues on mobile browsers until I messed around with the positioning values.<br><br>
+                        Through all this, I learned that I should've tested on different screen sizes way earlier, and that using em units for text sizes helps everything scale better. Also, sticking to the same green colors throughout really helped make the whole site feel connected to the conservation theme.
+                    </p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2><br>
+                    <p>The Life on Land website was built following modern web standards and accessibility best practices. W3C Validator was used to ensure clean, error-free HTML and CSS.
+
+                        To meet WCAG guidelines, we used semantic HTML, proper form labeling, alt text for images, and sufficient color contrast. Responsive design was optimized for different screen sizes, with em units for better scalability. Navigation elements, like the "go up" button, were adjusted for smooth functionality across devices.
+                        
+                        By maintaining a consistent color scheme and optimizing performance, the site ensures accessibility, usability, and a seamless user experience.</p>
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2><br>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 26 Feb 2025).</li>
+                        <li>Pixabay (2025) <i>Pixabay.</i> Available at: <a href="https://pixabay.com/">https://pixabay.com/</a> (Last accessed: 8 Mar 2025).</li>  
+                        <li>W3Schools (2025) <i>W3Schools.</i> Available at: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a> (Last accessed: 5 Mar 2025).</li>  
+
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <ul class="top-level-ul">
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#home">Home page </a></li>
+                        <li><a href="#table">Table page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+           
+        
+            <script>
+                function showSidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex';
+                }
+        
+                function closeSidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none';
+                }
+            </script>
+  
+
+<footer>
+    <div class="footer-main">
+        <div class="footerContent">
+            <img src="../Image/whiteText.png" alt="Logo">
+            <p>
+                Our mission is to restore and protect life on land through comminuty driven reforestation, conservation, sustainable practices.
+        </div>
+        <div class="footerContent">
+            <h4>Content Page</h4>
+            <ul>
+                <li><a href="content_ST1.html">Student 01</a></li>
+                <li><a href="content_ST2.html">Student 02</a></li>
+                <li><a href="content_ST3.html">Student 03</a></li>
+                <li><a href="content_ST4.html">Student 04</a></li>
+            </ul>
+        </div>
+        <div class="footerContent">
+            <h4>Editor Page</h4>
+            <ul>
+                <li><a href="pageEditor_ST1.html">Student 01</a></li>
+                <li><a href="pageEditor_ST2.html">Student 02</a></li>
+                <li><a href="pageEditor_ST3.html">Student 03</a></li>
+                <li><a href="pageEditor_ST4.html">Student 04</a></li>
+            </ul>
+        </div>
+        <div class="footerContent">
+            <h4>Validation Page</h4>
+            <ul>
+                <li><a href="validation_ST1.html">Student 01</a></li>
+                <li><a href="validation_ST2.html">Student 02</a></li>
+                <li><a href="validation_ST3.html">Student 03</a></li>
+                <li><a href="validation_ST4.html">Student 04</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="footer-bottom">
+    <span>copyright &copy; all recived by TeraBloom(Group16)</span>
+</div>
+
+</body>
+</html>
