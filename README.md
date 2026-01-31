@@ -56,4 +56,4 @@ Built as a static frontend website for a first-year university project.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/TerraBloom.git
+   git clone https://github.com/kalana-03/Live-on-Land.git
